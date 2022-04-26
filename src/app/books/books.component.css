@@ -1,0 +1,28 @@
+.books {
+    margin: 2 2 2em 2;
+    list-style-type: none;
+    padding: 0;
+    width: 50em;
+}
+.books li {
+    cursor:pointer;
+    position:relative;
+    left: 0;
+    background-color: linen;
+    margin: .5em;
+    padding: .4em 0;
+    padding-left: .9em;
+    padding-top: .5em;
+    height: 1.5em;
+    border-radius: 25px;
+}
+.books li:hover {
+    color: coral;
+    font-weight: bold;
+    background-color: rgb(235, 246, 253);
+    left: .1em;
+}
+
+.books li.selected:hover {
+    background-color: #BBD8DC;
+}

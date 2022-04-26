@@ -1,0 +1,19 @@
+
+<h2>Search by titles here!</h2>
+<ul class="books">
+    <li *ngFor="let book of books" (click)="onSelect(book)">
+        <span class="badge">{{book.title}}</span>
+    </li>
+</ul>
+
+<div *ngIf="selectedBook">
+ 
+    <h2>{{selectedBook.title}}</h2>
+    <div><span>Author: </span>{{selectedBook.author}}</div>
+    <div><span>Published: </span>{{selectedBook.published}}</div>
+    <div><span>Genre: </span>{{selectedBook.genre}}</div>
+    <div>
+      
+    </div>
+  
+</div>
